@@ -67,7 +67,7 @@ async function getOrders() {
   };
   const allOrders = await scanDynamoRecords(params, []);
   const body = {
-    products: allOrders,
+    orders: allOrders,
   };
   return buildResponse(200, body);
 }
