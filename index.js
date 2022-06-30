@@ -9,7 +9,7 @@ const orderPath = "/order";
 const ordersPath = "/orders";
 
 exports.handler = async function (event) {
-  console.log("Request event: ", event);
+  
   let response;
   switch (true) {
     case event.httpMethod === "GET" && event.path === womenCarePath:
